@@ -1,0 +1,155 @@
+{
+  "main": {
+    "id": "03cbca0e1bf2f833",
+    "type": "split",
+    "children": [
+      {
+        "id": "cb078e79f5ee6a60",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "Method/SQL注入.md",
+            "mode": "source"
+          }
+        },
+        "group": "6f81ddb4aa7af222"
+      },
+      {
+        "id": "9de6bb2bbb99f317",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "Method/SQL注入.md",
+            "mode": "preview"
+          }
+        },
+        "group": "6f81ddb4aa7af222"
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "d2203e39a156e51e",
+    "type": "split",
+    "children": [
+      {
+        "id": "2a25c36ccbbb774d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "547ffe9514442aed",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "ce077327f8a919ec",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "tag:#php流",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "03fdcaf96b718b93",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "3a416245b805c10c",
+    "type": "split",
+    "children": [
+      {
+        "id": "326a186ff57a8ce9",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b1731b68ab9f645a",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Method/SQL注入.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": false
+              }
+            }
+          },
+          {
+            "id": "852858c940bfb604",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Method/SQL注入.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "2f75fdc9705ab6ec",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "f7bef76ab060905c",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Method/SQL注入.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 217
+  },
+  "active": "cb078e79f5ee6a60",
+  "lastOpenFiles": [
+    "Method/SQL注入.md",
+    "target range/未命名.md",
+    "Tool/Docker.md",
+    "Tool/未命名.md",
+    "kernel/Linux/进程ID.md",
+    "kernel/Linux/uid.md",
+    "Method/常见路径.md",
+    "Method/XSS蠕虫.md",
+    "practice/2021-9-2NewsCenter.md",
+    "Lang/SQL/SQL.md"
+  ]
+}

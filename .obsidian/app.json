@@ -1,0 +1,12 @@
+{
+  "spellcheck": true,
+  "showFrontmatter": true,
+  "foldIndent": true,
+  "showLineNumber": true,
+  "showUnsupportedFiles": true,
+  "promptDelete": false,
+  "alwaysUpdateLinks": true,
+  "attachmentFolderPath": "attaches",
+  "newLinkFormat": "relative",
+  "defaultViewMode": "preview"
+}
