@@ -4,30 +4,28 @@
     "type": "split",
     "children": [
       {
-        "id": "cb078e79f5ee6a60",
+        "id": "3d650540ca9f40c2",
         "type": "leaf",
-        "dimension": 56.14296351451973,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Lang/SQL/INFORMATION_SCHEMA/INFORMATION_SCHEMA.md",
+            "file": "Method/XSS.md",
             "mode": "source"
           }
         },
-        "group": "6f81ddb4aa7af222"
+        "group": "08b03724d5d33617"
       },
       {
-        "id": "9de6bb2bbb99f317",
+        "id": "2b2b9e570907ca02",
         "type": "leaf",
-        "dimension": 43.857036485480265,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Lang/SQL/INFORMATION_SCHEMA/INFORMATION_SCHEMA.md",
+            "file": "Method/XSS.md",
             "mode": "preview"
           }
         },
-        "group": "6f81ddb4aa7af222"
+        "group": "08b03724d5d33617"
       }
     ],
     "direction": "vertical"
@@ -91,7 +89,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Lang/SQL/INFORMATION_SCHEMA/INFORMATION_SCHEMA.md",
+                "file": "Method/XSS.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -108,7 +106,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Lang/SQL/INFORMATION_SCHEMA/INFORMATION_SCHEMA.md",
+                "file": "Method/XSS.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -131,7 +129,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Lang/SQL/INFORMATION_SCHEMA/INFORMATION_SCHEMA.md"
+                "file": "Method/XSS.md"
               }
             }
           }
@@ -141,17 +139,17 @@
     "direction": "horizontal",
     "width": 217
   },
-  "active": "cb078e79f5ee6a60",
+  "active": "2b2b9e570907ca02",
   "lastOpenFiles": [
+    "Method/XSS.md",
+    "protocol/HTTP/CSP.md",
+    "protocol/HTTP/未命名.md",
     "Lang/SQL/INFORMATION_SCHEMA/INFORMATION_SCHEMA.md",
-    "Lang/SQL/INFORMATION_SCHEMA/COLUMNS.md",
-    "Lang/SQL/INFORMATION_SCHEMA/TRIGGERS.md",
-    "Lang/SQL/INFORMATION_SCHEMA/未命名.md",
-    "Lang/SQL/INFORMATION_SCHEMA/ROUTINES.md",
-    "Lang/SQL/INFORMATION_SCHEMA/KEY_COLUMN_USAGE.md",
-    "Lang/SQL/INFORMATION_SCHEMA/COLLATIONS.md",
-    "Lang/SQL/INFORMATION_SCHEMA/COLUMN_PRIVILEGES.md",
-    "Lang/SQL/INFORMATION_SCHEMA/TABLE_PRIVILEGES.md",
-    "Lang/SQL/INFORMATION_SCHEMA/USER_PRIVILEGES.md"
+    "kernel/Linux/进程ID.md",
+    "kernel/Linux/uid.md",
+    "Lang/SQL/SQL.md",
+    "Method/linux提权.md",
+    "Method/robots.txt.md",
+    "Method/SQL注入.md"
   ]
 }
