@@ -373,7 +373,7 @@ CSP可以防止攻击者从外部网站跨域加载恶意代码，但不能防�
 3. 严苛规则[[../protocol/HTTP/CSP#script-src 'self'|script-src 'self']]下的绕过
 关闭unsafe-inline模式，所有资源仅允许同源加载。此时可以重定向（302）导致绕过，如果将script-src设置为某个目录，通过该目录下的302跳转是可以绕过CSP取到记载其他目录的资源的
 payload:`http://example.com/xss.php?input=<script src="http://example.com/a/redirect.php?url=http://example.com/b/evil.js"></script>`
-4. CSRF绕过
+4. [[CSRF|CSRF]]绕过
 在HTTP响应头中注入\[CSRF\]\[CSRF\]，将CSP头部分割至HTTP响应体中，这样注入的XSS代码就不受影响了
 ### 6.8 危害与利用技巧
 - 盗取用户Cookie信息，伪造用户身份

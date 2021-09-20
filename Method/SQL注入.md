@@ -23,7 +23,7 @@ hex() -- ascii函数被禁止或者需要把二进制数据写入文件时可以
 if() -- if(condition,true result,false result)举例如下
 ?id=1 and 1=if(ascii(substr(user(),1,1))=97,1,2)
 ```
-==使用sqlmap可能会误报，一些数据返回页面及接口返回数据时可能会存在返回的是随机字符串（如，时间戳或防止CSRF的token等）会导致页面长度发生变化==
+==使用sqlmap可能会误报，一些数据返回页面及接口返回数据时可能会存在返回的是随机字符串（如，时间戳或防止[[CSRF|CSRF]]的token等）会导致页面长度发生变化==
 - 获取数据库长度
 
   ​	username=111’ or length(database())=8 # &password=222&act=tijiao

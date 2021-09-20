@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Method/XSS.md",
+            "file": "Method/SSRF.md",
             "mode": "source"
           }
         },
@@ -21,7 +21,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Method/XSS.md",
+            "file": "Method/SSRF.md",
             "mode": "preview"
           }
         },
@@ -52,7 +52,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#php流",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -89,12 +89,12 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Method/XSS.md",
+                "file": "Method/SSRF.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
-                "showSearch": false,
-                "searchQuery": "",
+                "showSearch": true,
+                "searchQuery": "csrf",
                 "backlinkCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -106,7 +106,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Method/XSS.md",
+                "file": "Method/SSRF.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -129,7 +129,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Method/XSS.md"
+                "file": "Method/SSRF.md"
               }
             }
           }
@@ -139,8 +139,10 @@
     "direction": "horizontal",
     "width": 217
   },
-  "active": "2b2b9e570907ca02",
+  "active": "3d650540ca9f40c2",
   "lastOpenFiles": [
+    "Method/SSRF.md",
+    "Method/SQL注入.md",
     "Method/XSS.md",
     "protocol/HTTP/CSP.md",
     "protocol/HTTP/未命名.md",
@@ -148,8 +150,6 @@
     "kernel/Linux/进程ID.md",
     "kernel/Linux/uid.md",
     "Lang/SQL/SQL.md",
-    "Method/linux提权.md",
-    "Method/robots.txt.md",
-    "Method/SQL注入.md"
+    "Method/linux提权.md"
   ]
 }
