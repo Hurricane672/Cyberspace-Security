@@ -21,7 +21,5 @@
   "audio-recorder",
   "open-with-default-app",
   "workspaces",
-  "file-recovery",
-  "publish",
-  "sync"
+  "file-recovery"
 ]
