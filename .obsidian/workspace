@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "others.md",
+            "file": "Method/XSS.md",
             "mode": "preview"
           }
         },
@@ -21,7 +21,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "others.md",
+            "file": "Method/XSS.md",
             "mode": "source"
           }
         },
@@ -89,7 +89,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "others.md",
+                "file": "Method/XSS.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -106,7 +106,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "others.md",
+                "file": "Method/XSS.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -129,7 +129,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "others.md"
+                "file": "Method/XSS.md"
               }
             }
           },
@@ -148,17 +148,17 @@
     "direction": "horizontal",
     "width": 218
   },
-  "active": "1e27eabcd99da203",
+  "active": "311ee565993303dd",
   "lastOpenFiles": [
-    "others.md",
-    "target range/webug.md",
-    "target range/Bwapp.md",
-    "target range/dvwa.md",
-    "target range/wavsep.md",
-    "target range/sqli-labs.md",
-    "Lang/SQL/SQL.md",
     "Method/XSS.md",
     "Method/SSRF.md",
-    "Method/特性利用.md"
+    "Method/CSRF.md",
+    "Method/跨协议通信技术利用.md",
+    "Method/代码执行.md",
+    "Method/搜索引擎.md",
+    "Method/特性利用.md",
+    "Method/条件竞争.md",
+    "Method/文件包含.md",
+    "Method/文件上传.md"
   ]
 }
